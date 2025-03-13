@@ -16,6 +16,9 @@ export default {
       fontFamily: {
         'san': ['Open Sans'],
         'paprika': ['Paprika'],
+      },
+      maxWidth: {
+        'container': '1170px',
       }
     },
   },
