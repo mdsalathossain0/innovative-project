@@ -6,6 +6,8 @@ import Image from '../components/Images'
 import List from '../components/List'
 import Button from '../components/Button'
 import Logo from '../assets/mainlogo.png'
+import { Link } from 'react-router-dom'
+
 
 const Nav = () => {
   return (
@@ -18,12 +20,12 @@ const Nav = () => {
                 </div>
                 <div className='w-8/12'>
                     <ul className='flex gap-x-10 justify-center cursor-pointer'>
-                    <List text='Home'/>
-                    <List text='About'/>
-                    <List text='Service'/>
-                    <List text='Portfolio'/>
-                    <List text='Price'/>
-                    <List text='Blog'/>
+                    <Link to='/'><List text='Home'/></Link>
+                    <Link to='/about'><List text='About'/></Link>
+                    <Link to='/service'><List text='Service'/></Link>
+                    <Link to='/portfolio'><List text='Portfolio'/></Link>
+                    <Link to='/price'><List text='Price'/></Link>
+                    <Link to='/blog'><List text='Blog'/></Link>
                     </ul>
                 </div>
                 <div className='w-2/12 text-right'>
